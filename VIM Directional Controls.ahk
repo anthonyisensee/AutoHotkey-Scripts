@@ -16,6 +16,10 @@ return
 !+h::
 Send, {Shift down}{Left}{Shift up}
 return
+; ALT + CTRL + h = CTRL + Left
+!^h::
+Send, {Control down}{Left}{Control up}
+return
 ; SHIFT + CTRL + h = SHIFT + CTRL + Left
 +^h::
 Send, {Shift down}{Control down}{Left}{Shift up}{Control up}
@@ -36,6 +40,9 @@ return
 !+l::
 Send, {Shift down}{Right}{Shift up}
 return
+; ALT + CTRL + l = CTRL + Right
+!^l::
+Send, {Control down}{Right}{Control up}
 ; SHIFT + CTRL + l = SHIFT + CTRL + Right
 +^l::
 Send, {Shift down}{Control down}{Right}{Shift up}{Control up}
