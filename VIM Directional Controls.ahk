@@ -16,9 +16,13 @@ return
 !+h::
 Send, {Shift down}{Left}{Shift up}
 return
-; ALT + SHIFT + CTRL + h -> SHIFT + CTRL + Left
-!+^h::
+; SHIFT + CTRL + h -> SHIFT + CTRL + Left
++^h::
 Send, {Shift down}{Control down}{Left}{Shift up}{Control up}
+return
+; ALT + SHIFT + CTRL + h -> Home
+!+^h::
+Send, {Home}
 return
 
 ; +=+ RIGHT +=+
@@ -30,9 +34,13 @@ return
 !+l::
 Send, {Shift down}{Right}{Shift up}
 return
-; ALT + SHIFT + CTRL + l -> SHIFT + CTRL + Right
-!+^l::
+; SHIFT + CTRL + l -> SHIFT + CTRL + Right
++^l::
 Send, {Shift down}{Control down}{Right}{Shift up}{Control up}
+return
+; ALT + SHIFT + CTRL + l -> End
+!+^l::
+Send, {End}
 return
 
 ; +=+ DOWN +=+
