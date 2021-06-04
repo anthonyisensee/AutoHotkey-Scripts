@@ -8,57 +8,61 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;+=+=+=+=+=+=+=+=+=+=+=
 
 ; +=+ LEFT +=+
-; ALT + h -> Left
+; ALT + h = Left
 !h::
 Send, {Left}
 return
-; ALT + SHIFT + h -> SHIFT + Left
+; ALT + SHIFT + h = SHIFT + Left
 !+h::
 Send, {Shift down}{Left}{Shift up}
 return
-; SHIFT + CTRL + h -> SHIFT + CTRL + Left
+; SHIFT + CTRL + h = SHIFT + CTRL + Left
 +^h::
 Send, {Shift down}{Control down}{Left}{Shift up}{Control up}
 return
-; ALT + SHIFT + CTRL + h -> Home
+
+; +=+ HOME +=+
+; ALT + SHIFT + CTRL + h = Home
 !+^h::
 Send, {Home}
 return
 
 ; +=+ RIGHT +=+
-; ALT + l -> Right
+; ALT + l = Right
 !l::
 Send, {Right}
 return
-; ALT + SHIFT + l -> SHIFT + Right
+; ALT + SHIFT + l = SHIFT + Right
 !+l::
 Send, {Shift down}{Right}{Shift up}
 return
-; SHIFT + CTRL + l -> SHIFT + CTRL + Right
+; SHIFT + CTRL + l = SHIFT + CTRL + Right
 +^l::
 Send, {Shift down}{Control down}{Right}{Shift up}{Control up}
 return
-; ALT + SHIFT + CTRL + l -> End
+
+; +=+ END +=+
+; ALT + SHIFT + CTRL + l = End
 !+^l::
 Send, {End}
 return
 
 ; +=+ DOWN +=+
-; ALT + j -> Down
+; ALT + j = Down
 !j::
 Send, {Down}
 return
-; ALT + SHIFT + j -> SHIFT + Down
+; ALT + SHIFT + j = SHIFT + Down
 !+j::
 Send, {Shift down}{Down}{Shift up}
 return
 
 ; +=+ UP +=+
-; ALT + k -> Up
+; ALT + k = Up
 !k::
 Send, {Up}
 return
-; ALT + SHIFT + k -> SHIFT + Up
+; ALT + SHIFT + k = SHIFT + Up
 !+k::
 Send, {Shift down}{Up}{Shift up}
 return
