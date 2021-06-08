@@ -42,7 +42,7 @@ Send, {Shift down}{Right}{Shift up}
 return
 ; ALT + CTRL + l = CTRL + Right
 !^l::
-Send, {Control down}{Right}{Control up}\
+Send, {Control down}{Right}{Control up}
 return
 ; SHIFT + CTRL + l = SHIFT + CTRL + Right
 +^l::
